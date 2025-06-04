@@ -69,6 +69,11 @@ SmartGridManager/
 
 ## Installation et Compilation
 
+
+---
+
+## Installation et Compilation
+
 ```bash
 git clone https://github.com/tonpseudo/SmartGridManager.git
 cd SmartGridManager
@@ -76,6 +81,8 @@ mkdir build && cd build
 cmake ..
 make
 ./SmartGridManager
+```
+
 
 Contribution
 Les contributions sont les bienvenues !
@@ -86,4 +93,4 @@ Pour toute question ou remarque, contactez-moi :
 
 Email : ilhem.lafi@etudiant-enit.utm.tn
 
-LinkedIn :linkedin.com/in/ilhem-laifi-9682702b2
+LinkedIn : linkedin.com/in/ilhem-laifi-9682702b2
