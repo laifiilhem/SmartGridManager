@@ -43,15 +43,25 @@
 ## Architecture du Projet
 
 SmartGridManager/
+
 ├── CMakeLists.txt # Configuration CMake
+
 ├── data/ # Fichiers CSV d'exemple
+
 ├── include/ # Headers (.h)
+
 │ ├── UniteElectrique.h # Classe de base
+
 │ ├── Maison.h # Spécialisation "Maison"
+
 │ ├── Hopital.h # Spécialisation "Hôpital"
+
 │ └── ...
+
 ├── src/ # Implémentations (.cpp)
+
 ├── ui/ # Fichiers d'interface (.ui)
+
 └── resources/ # Assets (styles, images)
 
 
