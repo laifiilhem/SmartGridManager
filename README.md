@@ -1,4 +1,4 @@
-# Smart Grid Manager
+# SmartGridManager
 
 **Application de gestion énergétique intelligente** développée en C++ avec Qt pour visualiser, analyser et optimiser la distribution d’électricité entre diverses unités (maisons, hôpitaux, établissements publics).
 
@@ -42,3 +42,38 @@
 
 ## Architecture du Projet
 
+SmartGridManager/
+├── CMakeLists.txt # Configuration CMake
+├── data/ # Fichiers CSV d'exemple
+├── include/ # Headers (.h)
+│ ├── UniteElectrique.h # Classe de base
+│ ├── Maison.h # Spécialisation "Maison"
+│ ├── Hopital.h # Spécialisation "Hôpital"
+│ └── ...
+├── src/ # Implémentations (.cpp)
+├── ui/ # Fichiers d'interface (.ui)
+└── resources/ # Assets (styles, images)
+
+
+---
+
+## Installation et Compilation
+
+```bash
+git clone https://github.com/tonpseudo/SmartGridManager.git
+cd SmartGridManager
+mkdir build && cd build
+cmake ..
+make
+./SmartGridManager
+
+Contribution
+Les contributions sont les bienvenues !
+Merci de créer une branche dédiée, de faire des commits clairs et de soumettre une Pull Request.
+
+Contact
+Pour toute question ou remarque, contactez-moi :
+
+Email : ilhem.lafi@etudiant-enit.utm.tn
+
+LinkedIn :linkedin.com/in/ilhem-laifi-9682702b2
