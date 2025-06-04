@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+<class>MainWindow</class>
+<widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+    <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1000</width>
+      <height>700</height>
+    </rect>
+  </property>
+  <property name="windowTitle">
+    <string>Smart Grid Manager</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+    <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+        <widget class="QTabWidget" name="tabWidget">
+          <widget class="QWidget" name="tabGestion">
+            <attribute name="title">
+              <string>Gestion</string>
+            </attribute>
+            <layout class="QVBoxLayout" name="verticalLayout_2">
+              <item>
+                <widget class="QTableWidget" name="tableWidget">
+                  <property name="columnCount">
+                    <number>7</number>
+                  </property>
+                </widget>
+              </item>
+              <item>
+                <layout class="QHBoxLayout" name="horizontalLayout">
+                  <item>
+                    <widget class="QPushButton" name="btnAfficherUnites">
+                      <property name="text">
+                        <string>Actualiser</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="btnSimulerCoupure">
+                      <property name="text">
+                        <string>Simuler coupure</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="btnAfficherGraphique">
+                      <property name="text">
+                        <string>Graphiques</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="btnSauvegarder">
+                      <property name="text">
+                        <string>Sauvegarder</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="btnCharger">
+                      <property name="text">
+                        <string>Charger</string>
+                      </property>
+                    </widget>
+                  </item>
+                </layout>
+              </item>
+            </layout>
+          </widget>
+          <widget class="QWidget" name="tabAjout">
+            <attribute name="title">
+              <string>Ajout</string>
+            </attribute>
+            <layout class="QHBoxLayout" name="horizontalLayout_2">
+              <item>
+                <widget class="QGroupBox" name="groupMaison">
+                  <property name="title">
+                    <string>Maison</string>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_3">
+                    <item>
+                      <widget class="QLineEdit" name="txtMaisonId">
+                        <property name="placeholderText">
+                          <string>ID Maison</string>
+                        </property>
+                      </widget>
+                    </item>
+                    <item>
+                      <widget class="QDoubleSpinBox" name="spinMaisonProd">
+                        <property name="prefix">
+                          <string>Prod: </string>
+                        </property>
+                        <property name="suffix">
+                          <string> kWh</string>
+                        </property>
+                      </widget>
+                    </item>
+                    <item>
+                      <widget class="QDoubleSpinBox" name="spinMaisonConso">
+                        <property name="prefix">
+                          <string>Conso: </string>
+                        </property>
+                        <property name="suffix">
+                          <string> kWh</string>
+                        </property>
+                      </widget>
+                    </item>
+                    <item>
+                      <widget class="QLineEdit" name="txtMaisonRegion">
+                        <property name="placeholderText">
+                          <string>Région</string>
+                        </property>
+                      </widget>
+                    </item>
+                    <item>
+                      <widget class="QPushButton" name="btnAjouterMaison">
+                        <property name="text">
+                          <string>Ajouter Maison</string>
+                        </property>
+                      </widget>
+                    </item>
+                  </layout>
+                </widget>
+              </item>
+              <item>
+                <widget class="QGroupBox" name="groupHopital">
+                  <property name="title">
+                    <string>Hôpital</string>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_4">
+                    <item>
+                      <widget class="QLineEdit" name="txtHopitalId">
+                        <property name="placeholderText">
+                          <string>ID Hôpital</string>
+                        </property>
+                      </widget>
+                    </item>
+                    <item>
+                      <widget class="QDoubleSpinBox" name="spinHopitalProd">
+                        <property name="prefix">
+                          <string>Prod: </string>
+                        </property>
+                        <property name="suffix">
+                          <string> kWh</string>
+                        </property>
+                      </widget>
+                    </item>
+                    <item>
+                      <widget class="QDoubleSpinBox" name="spinHopitalConso">
+                        <property name="prefix">
+                          <string>Conso: </string>
+                        </property>
+                        <property name="suffix">
+                          <string> kWh</string>
+                        </property>
+                      </widget>
+                    </item>
+                    <item>
+                      <widget class="QLineEdit" name="txtHopitalRegion">
+                        <property name="placeholderText">
+                          <string>Région</string>
+                        </property>
+                      </widget>
+                    </item>
+                    <item>
+                      <widget class="QSpinBox" name="spinHopitalAutonomie">
+                        <property name="prefix">
+                          <string>Autonomie: </string>
+                        </property>
+                        <property name="suffix">
+                          <string> jours</string>
+                        </property>
+                      </widget>
+                    </item>
+                    <item>
+                      <widget class="QPushButton" name="btnAjouterHopital">
+                        <property name="text">
+                          <string>Ajouter Hôpital</string>
+                        </property>
+                      </widget>
+                    </item>
+                  </layout>
+                </widget>
+              </item>
+              <item>
+                <widget class="QGroupBox" name="groupEtablissement">
+                  <property name="title">
+                    <string>Établissement Public</string>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_5">
+                    <item>
+                      <widget class="QLineEdit" name="txtEtablissementId">
+                        <property name="placeholderText">
+                          <string>ID Établissement</string>
+                        </property>
+                      </widget>
+                    </item>
+                    <item>
+                      <widget class="QDoubleSpinBox" name="spinEtablissementProd">
+                        <property name="prefix">
+                          <string>Prod: </string>
+                        </property>
+                        <property name="suffix">
+                          <string> kWh</string>
+                        </property>
+                      </widget>
+                    </item>
+                    <item>
+                      <widget class="QDoubleSpinBox" name="spinEtablissementConso">
+                        <property name="prefix">
+                          <string>Conso: </string>
+                        </property>
+                        <property name="suffix">
+                          <string> kWh</string>
+                        </property>
+                      </widget>
+                    </item>
+                    <item>
+                      <widget class="QComboBox" name="comboEtablissementType">
+                        <item>
+                          <property name="text">
+                            <string>École</string>
+                          </property>
+                        </item>
+                        <item>
+                          <property name="text">
+                            <string>Mairie</string>
+                          </property>
+                        </item>
+                        <item>
+                          <property name="text">
+                            <string>Bibliothèque</string>
+                          </property>
+                        </item>
+                      </widget>
+                    </item>
+                    <item>
+                      <widget class="QPushButton" name="btnAjouterEtablissement">
+                        <property name="text">
+                          <string>Ajouter Établissement</string>
+                        </property>
+                      </widget>
+                    </item>
+                  </layout>
+                </widget>
+              </item>
+            </layout>
+          </widget>
+          <widget class="QWidget" name="tabMiseAJour">
+            <attribute name="title">
+              <string>Mise à jour</string>
+            </attribute>
+            <layout class="QVBoxLayout" name="verticalLayout_6">
+              <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_3">
+                  <item>
+                    <widget class="QLineEdit" name="txtMajId">
+                      <property name="placeholderText">
+                        <string>ID de l'unité</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QDoubleSpinBox" name="spinMajProd">
+                      <property name="prefix">
+                        <string>Nouv. Prod: </string>
+                      </property>
+                      <property name="suffix">
+                        <string> kWh</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QDoubleSpinBox" name="spinMajConso">
+                      <property name="prefix">
+                        <string>Nouv. Conso: </string>
+                      </property>
+                      <property name="suffix">
+                        <string> kWh</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QPushButton" name="btnMettreAJour">
+                      <property name="text">
+                        <string>Mettre à jour</string>
+                      </property>
+                    </widget>
+                  </item>
+                </layout>
+              </item>
+            </layout>
+          </widget>
+        </widget>
+      </item>
+    </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+    <property name="geometry">
+      <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1000</width>
+        <height>21</height>
+      </rect>
+    </property>
+    <widget class="QMenu" name="menuFichier">
+      <property name="title">
+        <string>Fichier</string>
+      </property>
+      <addaction name="actionQuitter"/>
+    </widget>
+    <addaction name="menuFichier"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionQuitter">
+    <property name="text">
+      <string>Quitter</string>
+    </property>
+  </action>
+</widget>
+<resources/>
+<connections>
+  <connection>
+    <sender>actionQuitter</sender>
+    <signal>triggered()</signal>
+    <receiver>MainWindow</receiver>
+    <slot>close()</slot>
+  </connection>
+  <connection>
+    <sender>btnAjouterMaison</sender>
+    <signal>clicked()</signal>
+    <receiver>MainWindow</receiver>
+    <slot>on_btnAjouterMaison_clicked()</slot>
+  </connection>
+  <connection>
+    <sender>btnAjouterHopital</sender>
+    <signal>clicked()</signal>
+    <receiver>MainWindow</receiver>
+    <slot>on_btnAjouterHopital_clicked()</slot>
+  </connection>
+  <connection>
+    <sender>btnAjouterEtablissement</sender>
+    <signal>clicked()</signal>
+    <receiver>MainWindow</receiver>
+    <slot>on_btnAjouterEtablissement_clicked()</slot>
+  </connection>
+  <connection>
+    <sender>btnAfficherUnites</sender>
+    <signal>clicked()</signal>
+    <receiver>MainWindow</receiver>
+    <slot>on_btnAfficherUnites_clicked()</slot>
+  </connection>
+  <connection>
+    <sender>btnSimulerCoupure</sender>
+    <signal>clicked()</signal>
+    <receiver>MainWindow</receiver>
+    <slot>on_btnSimulerCoupure_clicked()</slot>
+  </connection>
+  <connection>
+    <sender>btnSauvegarder</sender>
+    <signal>clicked()</signal>
+    <receiver>MainWindow</receiver>
+    <slot>on_btnSauvegarder_clicked()</slot>
+  </connection>
+  <connection>
+    <sender>btnCharger</sender>
+    <signal>clicked()</signal>
+    <receiver>MainWindow</receiver>
+    <slot>on_btnCharger_clicked()</slot>
+  </connection>
+  <connection>
+    <sender>btnMettreAJour</sender>
+    <signal>clicked()</signal>
+    <receiver>MainWindow</receiver>
+    <slot>on_btnMettreAJour_clicked()</slot>
+  </connection>
+  <connection>
+    <sender>btnAfficherGraphique</sender>
+    <signal>clicked()</signal>
+    <receiver>MainWindow</receiver>
+    <slot>on_btnAfficherGraphique_clicked()</slot>
+  </connection>
+</connections>
+</ui>
