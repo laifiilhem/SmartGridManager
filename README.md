@@ -92,7 +92,7 @@ mingw32-make
 ```
 
 
-Contribution
+## Contribution
 Les contributions sont les bienvenues !
 Merci de :
 
@@ -104,7 +104,7 @@ Soumettre une Pull Request
 
 
 
-Contact
+## Contact
 Pour toute question ou suggestion, n'hésite pas à me contacter :
 
  Email : ilhem.lafi@etudiant-enit.utm.tn
