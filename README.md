@@ -75,7 +75,7 @@ SmartGridManager/
 ## Installation et Compilation
 
 ```bash
-git clone https://github.com/tonpseudo/SmartGridManager.git
+git clone https://github.com/laifiilhem/SmartGridManager.git
 cd SmartGridManager
 mkdir build && cd build
 cmake ..
