@@ -74,23 +74,40 @@ SmartGridManager/
 
 ## Installation et Compilation
 
+### 🔧 Prérequis
+- Qt 5.x (avec QtWidgets et QtCharts)
+- CMake ≥ 3.15
+- g++ / MinGW ou MSVC
+- (optionnel) Qt Creator pour simplifier le développement
+
+### 🖥️ Commandes
+
 ```bash
 git clone https://github.com/laifiilhem/SmartGridManager.git
 cd SmartGridManager
 mkdir build && cd build
-cmake ..
-make
-./SmartGridManager
+cmake -G "MinGW Makefiles" ..
+mingw32-make
+./SmartGridManager.exe
 ```
 
 
 Contribution
 Les contributions sont les bienvenues !
-Merci de créer une branche dédiée, de faire des commits clairs et de soumettre une Pull Request.
+Merci de :
+
+Créer une branche dédiée (feature/nom-fonctionnalite)
+
+Faire des commits clairs et concis
+
+Soumettre une Pull Request
+
+
 
 Contact
-Pour toute question ou remarque, contactez-moi :
+Pour toute question ou suggestion, n'hésite pas à me contacter :
 
-Email : ilhem.lafi@etudiant-enit.utm.tn
+ Email : ilhem.lafi@etudiant-enit.utm.tn
 
-LinkedIn : linkedin.com/in/ilhem-laifi-9682702b2
+ LinkedIn : linkedin.com/in/ilhem-laifi-9682702b2
+
