@@ -88,8 +88,7 @@ cd SmartGridManager
 mkdir build && cd build
 cmake -G "MinGW Makefiles" ..
 mingw32-make
-./SmartGridManager.exe
-```
+./SmartGrid.exe```
 
 
 ## Contribution
