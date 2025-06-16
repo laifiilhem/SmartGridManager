@@ -1,46 +1,48 @@
 # SmartGridManager
 
-**Application de gestion énergétique intelligente** développée en C++ avec Qt pour visualiser, analyser et optimiser la distribution d’électricité entre diverses unités (maisons, hôpitaux, établissements publics).
+**Smart energy management application** developed in C++ with Qt to visualize, analyze, and optimize electricity distribution among various units (homes, hospitals, public institutions).
 
 ---
 
-## Fonctionnalités Principales
+## 🔌 Main Features
 
-### Gestion des Unités Électriques  
-- Ajout/suppression de trois types d'unités :  
-  - Maisons (ID, production, consommation, région)  
-  - Hôpitaux (ID, production, consommation, région, autonomie en jours)  
-  - Établissements Publics (écoles, mairies, bibliothèques)  
-- Mise à jour dynamique des données (production/consommation).
+### Energy Unit Management  
+- Add/remove three types of units:  
+  - Houses (ID, production, consumption, region)  
+  - Hospitals (ID, production, consumption, region, autonomy in days)  
+  - Public Institutions (schools, city halls, libraries)  
+- Real-time update of data (production/consumption).
 
-### Visualisation des Données  
-- Tableau synthétique listant toutes les unités avec leurs caractéristiques.  
-- Graphiques interactifs :  
-  - Comparaison production vs consommation par région (diagrammes en barres).  
-  - Visualisation des déséquilibres énergétiques.
+### Data Visualization  
+- Summary table listing all units and their characteristics.  
+- Interactive charts:  
+  - Production vs. consumption comparison by region (bar charts).  
+  - Visualization of energy imbalances.
 
-### Simulation de Coupures  
-- Analyse en temps réel du réseau.  
-- Détection des déficits énergétiques avec alertes spécifiques pour les hôpitaux (unités critiques).
+### Power Outage Simulation  
+- Real-time grid analysis.  
+- Detection of energy deficits with special alerts for hospitals (critical units).
 
-### Persistance des Données  
-- Sauvegarde et chargement des données au format CSV.  
-- Export optionnel des graphiques en images.
-
----
-
-## Technologies Utilisées
-
-- **Langage :** C++17  
-- **Framework :** Qt 5 (Widgets, Charts, UI Designer)  
-- **Outils :**  
-  - CMake (compilation)  
-  - Qt Creator (développement)  
-  - QtCharts (visualisation)
+### Data Persistence  
+- Save and load data in CSV format.  
+- Optional export of graphs as images.
 
 ---
 
-## Architecture du Projet
+## 🛠️ Technologies Used
+
+- **Language:** C++17  
+- **Framework:** Qt 5 (Widgets, Charts, UI Designer)  
+- **Tools:**  
+  - CMake (build system)  
+  - Qt Creator (development)  
+  - QtCharts (visualization)
+
+---
+
+## 📁 Project Structure
+
+
 
 SmartGridManager/
 
@@ -65,22 +67,18 @@ SmartGridManager/
 └── resources/ # Assets (styles, images)
 
 
----
-
-## Installation et Compilation
-
 
 ---
 
-## Installation et Compilation
+## ⚙️ Installation & Build Instructions
 
-### 🔧 Prérequis
-- Qt 5.x (avec QtWidgets et QtCharts)
+### 🔧 Requirements
+- Qt 5.x (with QtWidgets and QtCharts)
 - CMake ≥ 3.15
-- g++ / MinGW ou MSVC
-- (optionnel) Qt Creator pour simplifier le développement
+- g++ / MinGW or MSVC
+- *(Optional)* Qt Creator to simplify development
 
-### 🖥️ Commandes
+### 🖥️ Build Commands
 
 ```bash
 git clone https://github.com/laifiilhem/SmartGridManager.git
@@ -89,23 +87,24 @@ mkdir build && cd build
 cmake -G "MinGW Makefiles" ..
 mingw32-make
 ./SmartGrid.exe
+
 ```
 
 
 ## Contribution
-Les contributions sont les bienvenues !
-Merci de :
+Contributions are welcome!
+Please :
 
-Créer une branche dédiée (feature/nom-fonctionnalite)
+Create a dedicated branch (e.g., feature/your-feature-name)
 
-Faire des commits clairs et concis
+Make clear and concise commits
 
-Soumettre une Pull Request
+Submit a Pull Request
 
 
 
 ## Contact
-Pour toute question ou suggestion, n'hésite pas à me contacter :
+For any questions or suggestions, feel free to reach out: :
 
  Email : ilhem.lafi@etudiant-enit.utm.tn
 
